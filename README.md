@@ -32,4 +32,21 @@ HTML heading menggunakan tag dari &lt;h1&gt;(terbesar) sampai yang &lt;h6&gt;(te
 
 ### HTML Paragraphs
 
-HTMLm paragraphs menggunakan tag &lt;p&gt;
+HTML paragraphs menggunakan tag &lt;p&gt;
+
+<img src="./img/paragraph.png">
+<img src="./img/paragraphHasil.png">
+
+### HTML Links
+
+HTML link mengunakan tag &lt;a&gt; dengan atribut href untuk link destinasi.
+
+<img src="./img/link.png">
+<img src="./img/linkHasil.png">
+
+### HTML Images
+
+HTML Images mengunakan tag &lt;img&gt;, dan memiliku atribut src(source file), alt(alternative text), width(lebar) dan height(panjang).
+
+<img src="./img/image.png">
+<img src="./img/imageHasil.png">
