@@ -14,12 +14,6 @@ HTML adalah kepanjangan dari **Hyper Text Markup Language**, markup language ada
 - &lt;head&gt; : berisi informasi meta mengenai halaman HTML.
 - &lt;body&gt; : container dari semua konten yang dapat dilihat seperti, heading, paragraphs, images, hyperlinks, tables, lists, dll.
 
-### HTML Elements
-
-HTML element terdiri dari start tag, content, dan end tag.
-
-Contoh element HTML : &lt;startTag&gt; Content &lt;/endTag&gt;
-
 Tidak semua HTML mempunyai content dan end tag, seperti &lt;br&gt;. Elements yang tidak mempunyai content sidebut empty elements.
 
 ## Basic HTML
@@ -46,7 +40,32 @@ HTML link mengunakan tag &lt;a&gt; dengan atribut href untuk link destinasi.
 
 ### HTML Images
 
-HTML Images mengunakan tag &lt;img&gt;, dan memiliku atribut src(source file), alt(alternative text), width(lebar) dan height(panjang).
+HTML Images mengunakan tag &lt;img&gt;, dan memiliki atribut src(source file), alt(alternative text), width(lebar) dan height(panjang).
 
 <img src="./img/image.png">
 <img src="./img/imageHasil.png">
+
+## HTML Elements
+
+HTML element terdiri dari start tag, content, dan end tag.
+
+**&lt;startTag&gt; Content &lt;/endTag&gt;**
+
+**&lt;h1&gt; Heading &lt;/h1&gt;**
+
+**&lt;p&gt; paragraph &lt;/p&gt;**
+
+### Nested element
+
+Nested element atau element bersarang artinya elemen dapat berisi elemen lain. Contoh nya seperti elemen &lt;body&gt; yang berisi elemen-elemen lain yang akan ditampilkan pad website, seperti &lt;p&gt; dan &lt;h1&gt;.
+
+## HTML Attributes
+
+- Semua HTMl element can have attributes.
+- Attributes memberikan informasi tambahan mengenai elemetnts.
+- Attributes selalu diletakan pada start tag.
+- Attributes biasanya menggunakan value seperti name="value".
+
+### Contoh Attributes
+
+1. href
