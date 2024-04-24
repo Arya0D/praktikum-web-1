@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .icon {
+      width: 50px;
+    }
+
+    tr,
+    td {
+      background-color: cyan;
+      width: 100px;
+    }
+
+    table,
+    tr,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <h1>LAtihan tabel</h1>
+    <table>
+      <tr style="color: chocolate; text-align: center">
+        <td>Materi</td>
+        <td>Sub Meateri</td>
+        <td>Icon</td>
+      </tr>
+      <tr>
+        <td>materi 1</td>
+        <td>HTML</td>
+        <td>
+          <img
+            class="icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+            alt=""
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>materi 2</td>
+        <td>CSS</td>
+        <td>
+          <img
+            class="icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            alt=""
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>materi 3</td>
+        <td>JavaScript</td>
+        <td>
+          <img
+            class="icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/946px-Javascript_badge.svg.png"
+            alt=""
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+
+  <script>
+    const icon = document.querySelectorAll(".icon");
+    console.log(icon[1]);
+    icon[0].addEventListener("click", () => {
+      icon[0].classList.toggle("active");
+
+      icon[0].setAttribute(
+        "src",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkRU5ON2bst4kE_TC4JmWC9VRPzKlmczp3bQ&s"
+      );
+    });
+    icon[1].addEventListener("click", () => {
+      icon[1].setAttribute(
+        "src",
+        "https://badoystudio.com/wp-content/uploads/2022/04/apa-itu-css.png"
+      );
+    });
+    icon[2].addEventListener("click", () => {
+      icon[2].setAttribute(
+        "src",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ90PFxTsrzw7xh51nRf0eE5ZMM7Fq7m7QR-0pv4h5dA&s"
+      );
+    });
+  </script>
+</html>
