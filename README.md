@@ -1,20 +1,35 @@
-## Praktikum Pemograman WEB-1
+# Praktikum Pemograman WEB-1
 
-## -HTML
+## HTML
 
 HTML adalah kepanjangan dari **Hyper Text Markup Language**, markup language adalah bahasa komputer yang menggunakan tags atau tanda yang akan diterjemahkan komputer menjadi sebuah tampilan web.
 
 ### Struktur HTML
 
-![html](/img/strukturHTML.png)
+<img src="./img/strukturHTML.png">
+<img src="./img/pageStruktur.png">
 
-- < DOCTYPE html > : deklarasi yang menadakan bahwa dokumen ini adalah HTML5.
-- < html > : akar(root) dari halaman HTML.
-- < head > : berisi informasi meta mengenai halaman HTML.
-- < body> : container dari semua konten yang dapat dilihat seperti, heading, paragraphs, images, hyperlinks, tables, lists, etc.
+- &lt;!DOCTYPE html&gt;: deklarasi yang menadakan bahwa dokumen ini adalah HTML5.
+- &lt;html&gt; : akar(root) dari halaman HTML.
+- &lt;head&gt; : berisi informasi meta mengenai halaman HTML.
+- &lt;body&gt; : container dari semua konten yang dapat dilihat seperti, heading, paragraphs, images, hyperlinks, tables, lists, dll.
 
 ### HTML Elements
 
-HTMl element terdiri dari start tag, content, dan end tag.
+HTML element terdiri dari start tag, content, dan end tag.
 
-### &lt;tagname&gt; Content goes here... &lt;/tagname&gt;
+Contoh element HTML : &lt;startTag&gt; Content &lt;/endTag&gt;
+
+Tidak semua HTML mempunyai content dan end tag, seperti &lt;br&gt;. Elements yang tidak mempunyai content sidebut empty elements.
+
+## Basic HTML
+
+### HTML Heading
+
+HTML heading menggunakan tag dari yang &lt;h1&gt;(terbesar) sampai yang &lt;h6&gt;(terkecil)
+
+<img src="./img/heading.png">
+
+### HTML Paragraphs
+
+HTMLm paragraphs menggunakan tag &lt;p&gt;
