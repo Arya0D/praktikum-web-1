@@ -26,7 +26,7 @@ Tidak semua HTML mempunyai content dan end tag, seperti &lt;br&gt;. Elements yan
 
 ### HTML Heading
 
-HTML heading menggunakan tag dari yang &lt;h1&gt;(terbesar) sampai yang &lt;h6&gt;(terkecil)
+HTML heading menggunakan tag dari &lt;h1&gt;(terbesar) sampai yang &lt;h6&gt;(terkecil)
 
 <img src="./img/heading.png">
 
