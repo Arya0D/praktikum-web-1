@@ -61,7 +61,7 @@ Nested element atau element bersarang artinya elemen dapat berisi elemen lain. C
 
 ## HTML Attributes
 
-- Semua HTMl element can have attributes.
+- Semua HTML element bisa memiliki attributes.
 - Attributes memberikan informasi tambahan mengenai elemetnts.
 - Attributes selalu diletakan pada start tag.
 - Attributes biasanya menggunakan value seperti name="value".
