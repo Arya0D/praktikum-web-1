@@ -183,6 +183,74 @@ HTML berisi beberapa elemen untuk mendefinisikan teks dengan makna khusus.
 
 ![formmatting text](/img/formatting.png)
 
+## HTML Quotation and Citation Elements
+
+element HTML yang digunakan untuk mengutip.
+
+&lt;blockquote&gt; - Mendefinisikan bagian yang dikutip dari sumber lain
+
+```
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the
+      world's leading conservation organization, WWF works in nearly 100
+      countries. At every level, we collaborate with people around the world to
+      develop and deliver innovative solutions that protect communities,
+      wildlife, and the places in which they live.
+    </blockquote>
+```
+
+&lt;q&gt; - Mengutip teks menggunakan (" ")
+
+```
+  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+```
+
+&lt;abbr&gt; - Mendefinisikan singkatan atau akronim
+
+```
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+```
+
+&lt;address&gt; - informasi kontak untuk penulis/pemilik dokumen
+
+```
+  <address>
+      Written by John Doe.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+```
+
+&lt;cite&gt; - informasi kontak untuk penulis/pemilik dokumen
+
+```
+   <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+```
+
+&lt;bdo&gt; - menulis teks dari kanan ke kiri
+
+```
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+```
+
+![quotation](/img/quotation.png)
+
+## HTML Comment
+
+HTML bisa menuliskan komen dengan menggunakan syntax:
+
+```
+<!-- tulis komen disini --!>
+```
+
+komen tidak akan ditampilkan pada halaman web.
+
 ## HTMl Colors
 
 Warna HTML ditentukan dengan nama warna yang sudah ditentukan sebelumnya, atau dengan nilai RGB, HEX, HSL, RGBA, atau HSLA.
