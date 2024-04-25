@@ -68,10 +68,30 @@ Nested element atau element bersarang artinya elemen dapat berisi elemen lain. C
 
 ### Contoh Attributes
 
-#### href
+#### 1. href
 
-href adalah attribut yang digunakan pada tag &lt;a&gt;.menentukan URL halaman yang dituju tautannya
+href adalah attribut yang digunakan pada element &lt;a&gt;.menentukan URL halaman yang dituju tautannya.
+![href](./img/href.png)
 
-#### src
+#### 2. src
 
-src
+src attribut yang digunakan pada element &lt;img&gt; menentukan parh ke gambar yang akan ditampilkan .
+
+ada dua cara untuk menentukan URL pada src attribute:
+
+1. Absosulte URL:
+   Tautan ke gambar eksternal yang dihosting di situs web lain. Contoh: src="https://www.w3schools.com/images/img_girl.jpg".
+
+   ![absolueteURL](/img/absoluteSRC.png)
+
+2. Relative URL: Tautan ke gambar yang di-host di dalam situs web. Di sini, URL tidak menyertakan nama domain. Jika URL dimulai tanpa garis miring, URL akan relatif terhadap halaman saat ini. Contoh: src="img_girl.jpg". Jika URL dimulai dengan garis miring, maka akan relatif terhadap domain. Contoh: src = "/images/img_girl.jpg".
+   ![relativeteURL](/img/relativeSRC.png)
+
+   ![src](/img/src.png)
+
+#### 3. width dan height
+
+width dan height digunakan pada tag &lt;img&gt; untuk menentukan ukuran lebar dan panjang gambar.
+![size](/img/width&height.png)
+
+![alt text](w&h.png)
