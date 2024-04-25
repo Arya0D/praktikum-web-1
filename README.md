@@ -273,8 +273,6 @@ hsl merupakan kepanjangan dari hue(rona warna), saturation(saturasi), lightnes(k
 
 hsla merupkan ekstensi dari hsla dengan tambahan Alpha channel yang merupakan opacity dari warna.
 
-**hsl(hue, saturation, lightness, alpha)**
-
 - hsl
 
 **hsl(hue, saturation, lightness)**
