@@ -29,7 +29,7 @@ HTML heading menggunakan tag dari &lt;h1&gt;(terbesar) sampai yang &lt;h6&gt;(te
 HTML paragraphs menggunakan tag &lt;p&gt;
 
 <img src="./img/paragraph.png">
-<img src="./img/paragraphHasil.png">
+<img src="./img/hasil-paragraph.png.png">
 
 ### HTML Links
 
@@ -207,9 +207,11 @@ Dalam HTML warna sudah ditentukan dengan nama warna.
 
 ### 2. RGB dan RGBA
 
-Tiap parameter (merah, hijau, dan biru) mendefinisikan intensitas warna dengan nilai antara 0 dan 255. Dengan 16777216(255 x 255 x 255) kemungkinan warna.
+- RGB
 
-**rgb (red, green blue)**
+  **rgb (red, green, blue)**
+
+  Tiap parameter (merah, hijau, dan biru) mendefinisikan intensitas warna dengan nilai antara 0 dan 255. Dengan 16777216(255 x 255 x 255) kemungkinan warna.
 
 ```
   <h1 style="background-color: rgb(255, 0, 0)">rgb(255, 0, 0)</h1>
@@ -222,3 +224,85 @@ Tiap parameter (merah, hijau, dan biru) mendefinisikan intensitas warna dengan n
 ```
 
 ![color](/img/color-name.png)
+
+- RGBA
+
+  **rgba (red, green, blue, alpha)**
+
+RGBA adalah extensi dari RGB dengan tambahab Alpha channel yang merupakan opacity dari warna
+
+```
+  <h1 style="background-color: rgba(255, 99, 71, 0)">rgba(255, 99, 71, 0)</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.2)">
+      rgba(255, 99, 71, 0.2)
+    </h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.4)">
+      rgba(255, 99, 71, 0.4)
+    </h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.6)">
+      rgba(255, 99, 71, 0.6)
+    </h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.8)">
+      rgba(255, 99, 71, 0.8)
+    </h1>
+    <h1 style="background-color: rgba(255, 99, 71, 1)">rgba(255, 99, 71, 1)</h1>
+
+```
+
+![color](/img/RGBA.png)
+
+### 3. hex(Hexadecimal)
+
+Warna heksadesimal ditentukan dengan: #RRGGBB, di mana bilangan bulat heksadesimal RR (merah), GG (hijau) dan BB (biru) menentukan komponen warna.
+
+```
+    <h1 style="background-color: #ff0000">#ff0000</h1>
+    <h1 style="background-color: #0000ff">#0000ff</h1>
+    <h1 style="background-color: #3cb371">#3cb371</h1>
+    <h1 style="background-color: #ee82ee">#ee82ee</h1>
+    <h1 style="background-color: #ffa500">#ffa500</h1>
+    <h1 style="background-color: #6a5acd">#6a5acd</h1>
+
+```
+
+![color](/img/hex.png)
+
+### 4. hsl dan hsla
+
+hsl merupakan kepanjangan dari hue(rona warna), saturation(saturasi), lightnes(kecerahan).
+
+hsla merupkan ekstensi dari hsla dengan tambahan Alpha channel yang merupakan opacity dari warna.
+
+**hsl(hue, saturation, lightness, alpha)**
+
+- hsl
+
+**hsl(hue, saturation, lightness)**
+
+```
+   <h1 style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</h1>
+    <h1 style="background-color: hsl(240, 100%, 50%)">hsl(240, 100%,w 50%)</h1>
+    <h1 style="background-color: hsl(147, 50%, 47%)">hsl(147, 50%, 47%)</h1>
+    <h1 style="background-color: hsl(300, 76%, 72%)">hsl(300, 76%, 72%)</h1>
+    <h1 style="background-color: hsl(39, 100%, 50%)">hsl(39, 100%, 50%)</h1>
+    <h1 style="background-color: hsl(248, 53%, 58%)">hsl(248, 53%, 58%)</h1>
+
+```
+
+![color](/img/hsl.png)
+
+- hsla
+
+**hsl(hue, saturation, lightness, alpha)**
+
+```
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+
+```
+
+![color](/img/hsla.png)
