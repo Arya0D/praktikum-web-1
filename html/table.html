@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    tr,
+    th,
+    td {
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Jurusan</th>
+        <th>Kelas</th>
+        <th colspan="2">Universitas</th>
+      </tr>
+      <tr>
+        <td>Arya</td>
+        <td>D3 Teknik Informatika</td>
+        <td>TI-C</td>
+        <td rowspan="3">PNC</td>
+        <td rowspan="3">
+          <img src="/img/pnc.png" alt="" width="70" height="70" />
+        </td>
+      </tr>
+      <tr>
+        <td>Budi</td>
+        <td>D4 Teknik Pencegahan Pencemaran Lingkungan</td>
+        <td>TPPL-A</td>
+      </tr>
+      <tr>
+        <td>Agus</td>
+        <td>D3 Teknik Mesin</td>
+        <td>TM-B</td>
+      </tr>
+    </table>
+  </body>
+</html>
