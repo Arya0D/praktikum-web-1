@@ -49,7 +49,17 @@ HTML Images mengunakan tag &lt;img&gt;, dan memiliki atribut src(source file), a
 
 HTML element terdiri dari start tag, content, dan end tag.
 
-**&lt;startTag&gt; Content &lt;/endTag&gt;**
+```
+<startTag> Content </endTag>
+```
+
+```
+<h1>Heading</h1>
+```
+
+```
+<p>Paragraph</p>
+```
 
 **&lt;h1&gt; Heading &lt;/h1&gt;**
 
@@ -172,3 +182,43 @@ HTML berisi beberapa elemen untuk mendefinisikan teks dengan makna khusus.
 ```
 
 ![formmatting text](/img/formatting.png)
+
+## HTMl Colors
+
+Warna HTML ditentukan dengan nama warna yang sudah ditentukan sebelumnya, atau dengan nilai RGB, HEX, HSL, RGBA, atau HSLA.
+
+### 1. Color Name
+
+Dalam HTML warna sudah ditentukan dengan nama warna.
+
+```
+        <h1 style="background-color: Tomato">Tomato</h1>
+        <h1 style="background-color: Orange">Orange</h1>
+        <h1 style="background-color: DodgerBlue">DodgerBlue</h1>
+        <h1 style="background-color: MediumSeaGreen">MediumSeaGreen</h1>
+        <h1 style="background-color: Gray">Gray</h1>
+        <h1 style="background-color: SlateBlue">SlateBlue</h1>
+        <h1 style="background-color: Violet">Violet</h1>
+        <h1 style="background-color: LightGray">LightGray</h1>
+
+```
+
+![color](/img/color-name.png)
+
+### 2. RGB dan RGBA
+
+Tiap parameter (merah, hijau, dan biru) mendefinisikan intensitas warna dengan nilai antara 0 dan 255. Dengan 16777216(255 x 255 x 255) kemungkinan warna.
+
+**rgb (red, green blue)**
+
+```
+  <h1 style="background-color: rgb(255, 0, 0)">rgb(255, 0, 0)</h1>
+    <h1 style="background-color: rgb(0, 0, 255)">rgb(0, 0, 255)</h1>
+    <h1 style="background-color: rgb(60, 179, 113)">rgb(60, 179, 113)</h1>
+    <h1 style="background-color: rgb(238, 130, 238)">rgb(238, 130, 238)</h1>
+    <h1 style="background-color: rgb(255, 165, 0)">rgb(255, 165, 0)</h1>
+    <h1 style="background-color: rgb(106, 90, 205)">rgb(106, 90, 205)</h1>
+
+```
+
+![color](/img/color-name.png)
