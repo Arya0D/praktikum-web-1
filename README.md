@@ -92,6 +92,83 @@ ada dua cara untuk menentukan URL pada src attribute:
 #### 3. width dan height
 
 width dan height digunakan pada tag &lt;img&gt; untuk menentukan ukuran lebar dan panjang gambar.
+
 ![size](/img/width&height.png)
 
 ![alt text](w&h.png)
+
+#### 4. style
+
+Atribut style digunakan untuk menambahkan gaya ke
+elemen, seperti warna, font, ukuran, dan lainnya.
+
+![style](/img/style.png)
+![style](/img/hasilStyle.png)
+
+## 5. HTML Formatting
+
+HTML berisi beberapa elemen untuk mendefinisikan teks dengan makna khusus.
+
+### HTML formatting ellements
+
+- &lt;b&gt; - Bold text
+
+```
+<b>bold text</b>
+```
+
+- &lt;strong&gt; - Important text
+
+```
+<strong>strong text</strong>
+```
+
+- &lt;i&gt; - Italic text
+
+```
+<i>italic text</i>
+```
+
+- &lt;em&gt; - Marked text
+
+```
+<mark>mark text</mark>
+```
+
+- &lt;mark&gt; - Smaller text
+
+```
+<small>small text</small>
+```
+
+- &lt;small&gt; - Deleted text
+
+```
+<del>del text</del>
+```
+
+- &lt;ins&gt; - Inserted text
+
+```
+<p><ins>ins text</ins></p>
+```
+
+- &lt;sub&gt; - Subscript text
+
+```
+<sub>sub text</sub>
+```
+
+<sub>sub text</sub>
+
+```
+- &lt;sup&gt; - Superscript text
+```
+
+<sup>sup text</sup>
+
+```
+<sup>sup text</sup>
+```
+
+![formmatting text](/img/formatting.png)
