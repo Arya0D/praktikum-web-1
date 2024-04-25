@@ -68,4 +68,10 @@ Nested element atau element bersarang artinya elemen dapat berisi elemen lain. C
 
 ### Contoh Attributes
 
-1. href
+#### href
+
+href adalah attribut yang digunakan pada tag &lt;a&gt;.menentukan URL halaman yang dituju tautannya
+
+#### src
+
+src
