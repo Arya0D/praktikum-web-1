@@ -1573,9 +1573,11 @@ function light(sw) {
 </html>
 ```
 ketika klik tombol Light on
+
 ![image](https://github.com/Arya0D/praktikum-web-1/assets/120310980/df61a8b9-4156-42c8-b302-5c4f9820f0ee)
 
 ketika klik tombol Light of
+
 ![image](https://github.com/Arya0D/praktikum-web-1/assets/120310980/4b03fca4-72f3-42cc-bb3d-9ecf533d42be)
 
 
