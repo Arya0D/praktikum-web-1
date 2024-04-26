@@ -1539,6 +1539,3 @@ function tambah(a,b){
 
 tambah(a,b);
 ```
-
-```
-```
