@@ -943,10 +943,587 @@ prioritas pada CSS:
 2. External and internal style sheets
 3. Browser default
 
+## CCS Background
+
+Dengan CSS kita dapat merubah latar belakang halaman website. Dengan menggunakan properties :
+
+1. background-color - untuk merubah warna latar belakang
+2. background-image - untuk menambah gambar pada latar belakang
+3. backgrounnd-repeat - untuk mengatur perulangan gambar pada bakground-image
+4. background-position - unutk mengatur posisi gambar
+
+```
+   body {
+      background-color: lightblue;
+      background-image: url("https://www.w3schools.com/css/img_tree.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+```
+
+![bg](/img/bg.png)
+
+Atau dapat disingkat :
+
+```
+    body {
+      width: 100vh;
+      background: lightblue url("https://www.w3schools.com/css/img_tree.png") repeat;
+    }
+```
+
+![bg](/img/bg-s.png)
+
+## CSS Border
+
+Dengan properti CSS border memungkinkan untuk merubah style boerder pada sebuah elemen.
+
+Properti border :
+
+1. boder-width - ketebalan border
+2. border-style - jenis border
+3. bborder-color - warna border
+
+```
+    {
+      border-widht: 5px;
+      border-style: solid;
+      boder-color: green;
+    }
+```
+
+![border](/img/border.png)
+Atau dapat disingkat menjadi:
+
+```
+    {
+      border: 5px solid red
+    }
+```
+
+![border](/img/border-short.png)
+
 ## CSS Margin
+
+Margin digunakan untuk menciptakan ruang di sekeliling elemen, di luar batas yang ditentukan.
+
+Properti margin:
+
+1. margin-top - untuk menambahkan margin bagian atas elemen
+2. margin-right - untuk menambahkan margin bagian kanan elemen
+3. margin-bottom - untuk menambahkan margin bagian bawah elemen
+4. margin-left - untuk menambahkan margin bagian kiri elemen
+5. margin - rata atas, kanan, bawah, kiri / shorthand
+
+**Jika kita inspect element pada browser kita dapat melihat ukuran margin suatu elemen.**
+
+```
+{
+  margin: 20px;
+}
+```
+
+![margin](/img/margin.png)
+
+Artinya semua sisi mrgin bernilai 20px;
+
+Shorthand margin:
+
+```
+{
+  margin: 50px 70px 60px 20px
+}
+```
+
+![margin](/img/margin-short.png)
+
+<ul>
+<li>margin: 50px 70px 60px 20px</li>
+<ul type="circle">
+<li>margin-top: 50px</li>
+<li>margin-right: 70px</li>
+<li>margin-bottom: 60px</li>
+<li>margin-left: 20px</li>
+</ul>
+</ul>
 
 ## CSS Padding
 
+Padding digunakan untuk membuat ruang di sekitar konten elemen, di dalam batas yang ditentukan.
+
+Properti padding:
+
+1. padding-top - untuk menambahkan padding pada bagian atas elemen
+2. padding-right - untuk menambahkan padding bagian kanan elemen
+3. padding-bottom - untuk menambahkan padding bagian bawah elemen
+4. padding-left - untuk menambahkan padding bagian kiri elemen
+5. padding - rata atas, kanan, bawah, kiri / shorthand
+
+**Jika kita inspect element pada browser kita dapat melihat ukuran padding suatu elemen.**
+
+```
+{
+  padding: 20px;
+}
+```
+
+![padding](/img/padding.png)
+
+Artinya semua sisi mrgin bernilai 20px;
+
+Shorthand padding:
+
+```
+{
+  padding: 50px 70px 60px 20px
+}
+```
+
+![padding](/img/padding-short.png)
+
+<ul>
+<li>padding: 50px 70px 60px 20px</li>
+<ul type="circle">
+<li>padding-top: 50px</li>
+<li>padding-right: 70px</li>
+<li>padding-bottom: 60px</li>
+<li>padding-left: 20px</li>
+</ul>
+</ul>
+
 ## CSS Height dan Width
 
+Properti width dan height CSS digunakan untuk mengatur tinggi dan lebar elemen.
+
+Value properti width dan height:
+
+1. auto - Default
+2. lenght - Menentukan width/height dalam px, cm, dll
+3. % - Menentukan width/height dalam persen dari block yang berisi
+4. initial - Menetapkan idth/height ke nilai default
+5. inherit - Widt/heiht akan diwarsisi dari nilai induknya
+
 ## CSS Box model
+
+Dalam CSS, istilah "box model" digunakan ketika berbicara tentang desain dan tata letak.
+
+Box model CSS pada dasarnya adalah sebuah kotak yang membungkus setiap elemen HTML. Terdiri dari: content, padding, border, dan margin. Gambar di bawah ini mengilustrasikan model kotak:
+
+![box-model](/img/box-model.png)
+
+Contoh box-model:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>padding</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    div {
+      width: 200px;
+      height: fit-content;
+      border-width: 5px;
+      border-style: solid;
+      border-color: red;
+      padding: 15px;
+      margin: 15px;
+      background: lightblue;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Padding</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+        perspiciatis sapiente natus error eos sit dolore nulla eius quam atque?
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+![box-model](/img/box-model-hasil.png)
+
+## CSS Display
+
+Properti display adalah properti CSS yang paling penting untuk mengontrol tata letak.
+
+Setiap elemen HTML memiliki nilai tampilan default, tergantung pada jenis elemennya. Nilai tampilan default untuk sebagian besar elemen block dan inline.
+
+display yang sering digunakan
+
+1. block
+2. inline
+3. inlne-block
+4. flex
+5. grid
+
+## CSS Posistion
+
+Properti position menentukan jenis metode pemosisian yang digunakan untuk suatu elemen.
+
+Ada lima position values;
+
+1. static - default
+2. relative - elemen relative terhadap posisi normal
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+  <style>
+    div {
+      position: relative;
+      left: 20px;
+      border: 2px solid red;
+      padding: 3px;
+      width: max-content;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maiores
+      iure pariatur quos nihil quasi temporibus harum rem exercitationem
+      repudiandae.
+    </p>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+      laboriosam.
+    </div>
+  </body>
+</html>
+```
+
+![position](/img/relative.png)
+Posisi bergeser 20px dari posisi awal.
+
+3.absolute - elemen relative terhadap ancestor yang diposisikan terdekat (realtive).
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+  <style>
+    .relative {
+      position: relative;
+      background: silver;
+      width: 100%;
+      height: 200px;
+    }
+    .absolute {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      border: 2px solid red;
+      padding: 3px;
+      width: max-content;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, maiores
+      iure pariatur quos nihil quasi temporibus harum rem exercitationem
+      repudiandae.
+    </p>
+    <div class="relative">
+      <div class="absolute">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+        laboriosam.
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+![position](/img/absolute.png)
+posisi class absolute berada di bagian bawah karena relative terhadap class relative.
+
+4. fixed
+
+   Elemen dengan posisi: fixed; diposisikan relatif terhadap viewport, yang berarti selalu berada di tempat yang sama meskipun halaman digulir.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+</body>
+</html>
+```
+
+![position](/img/fixed.png)
+
+5. stiky
+
+Elemen dengan posisi: stiky; diposisikan berdasarkan posisi scroll pengguna.
+
+```
+
+
+    Home
+    CSS
+    CSS Position
+    Tryit: Using position: sticky
+
+Result Size: 446 x 445
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+div.sticky {
+
+  position: -webkit-sticky;
+
+  position: sticky;
+
+  top: 0;
+
+  padding: 5px;
+
+  background-color: #cae8ca;
+
+  border: 2px solid #4CAF50;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+​
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+​
+
+<div class="sticky">I am sticky!</div>
+
+​
+
+<div style="padding-bottom:2000px">
+
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+
+  <p>Scroll back up to remove the stickyness.</p>
+
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+</div>
+
+​
+
+</body>
+
+</html>
+```
+
+![position](/img/stiky-before.png)
+
+![position](/img/stiky-after.png)
+
+# JavaScript
+
+JavaScript adalah bahasa pemrograman yang paling populer. JavaScript digunakan untuk membuat website mejadi lebih interaktif.
+
+## Cara menambahkan JavaScript
+
+JavaScript bisa digunakakan dengan cara:
+
+1. Menggunakan tag &lt;script&gt;
+
+```
+<script>
+console.log("hello world")
+</script>
+```
+
+2. External JavaScript
+
+pada file HTML:
+
+```
+<script src:"script.js"></script>
+```
+
+file js:
+
+```
+console.log("hello world")
+```
+
+## JavaScript output
+
+ada beberapa cara untuk menampilkan data pada JavaScript:
+
+1. innerHTML - menampilkan data pada file HTML
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript output</h1>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "hello world";
+</script>
+
+</body>
+</html>
+```
+
+![output](/img/js-innerHTML.png)
+
+2. console.log() - Menampilkan data pada console/terminal.
+
+```
+<script>
+console.log("hello world")
+</script>
+```
+
+![output](/img/js-consol.png)
+
+## JavaScript statement
+
+JavaScript statement terdiri dari:
+
+Values, Operator, Expression, Keywords, dan Comments.
+
+contoh:
+
+```
+ document.getElementById("demo").innerHTML = "Hello world";
+```
+
+Statement ini memberitahu browser untuk menulis "Hello world" pada element dengan id demo.
+
+## JavaScript Syntax
+
+### JavaScript Literals
+
+Dua aturan syntax yang paling penting untuk fixed values adalah:
+
+1. Number - Angka
+
+```
+10000
+10.10
+```
+
+2. String - Teks
+
+```
+"Arya"
+'Arya'
+```
+
+### JavaScript Variabel
+
+Variabel digunakan untuk menyimpan nilai.
+
+dalam JavaScript ada 3 variabel yang dapat digunkan:
+
+1. var
+2. let
+3. const
+
+```
+let a = 1;
+const halo = "hello semua";
+var  b = 'b';
+```
+
+### JavaScript Operator
+
+JavaScript menggunakan operator aritmatika ( + - \* / ) untuk menghitung nilai:
+
+```
+(1+2)*3
+```
+
+dan menggunakan (=) untuk menetapkan nilai ke variabel :
+
+```
+let x = 1;
+```
+
+### JavaScript Expression
+
+Eksprestiom adalah kombinasi nilai, variabel, dan operator, yang menghitung suatu nilai. Komputasi ini disebut evaluasi.
+
+contoh :
+
+```
+1+1
+
+"John" + " " + "Doe"
+
+let x = 3;
+x +3
+```
+
+## JavaScript Tipe Data
+
+tipe data yang ada pada JAvaScript:
+
+1. String - Teks
+2. Number - Angka
+3. Bigint - Bilangan bulat lebih dari 15 digit
+4. Boolean - Nilai benar dan salah
+5. Undifined - Tidak terdefinisi
+6. Null - kosong
+7. Symbol
+8. Object
+
+## JavaScript Function
