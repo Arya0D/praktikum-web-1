@@ -1527,3 +1527,15 @@ tipe data yang ada pada JAvaScript:
 8. Object
 
 ## JavaScript Function
+
+Function JavaScript adalah sebuah blok kode yang dirancang untuk melakukan tugas tertentu.
+
+Fucnction JavaScript dijalankan ketika "sesuatu" memintanya (memanggilnya).
+
+```
+function tambah(a,b){
+  a+b;
+};
+
+tambah(a,b);
+```
